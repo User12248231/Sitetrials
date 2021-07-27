@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SBS Intra-School MUN</title>
+  </head>
+  <style>
+      @import url('https://fonts.googleapis.com/css?family=Amaranth|Source+Sans+Pro&display=swap');
+
+        body ul {
+            margin: 0;
+        }
+        body .center {
+            margin: 0 auto;
+            text-align: center;
+        }
+        body img {
+            width: 100%;
+        }
+        .main {
+            padding: 2em 0;
+        }
+        .main h1 {
+            color: #61d4d7;
+            font-family: Poppins;
+            line-height: 3em;
+        }
+        .main h3 {
+            color: black;
+            font-family: Poppins;
+        }
+        .main p {
+            color: black;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.4em;
+        }
+        .main .timeline {
+            position: relative;
+        }
+        .main .timeline:before {
+            background: grey;
+            content: '';
+            height: 100%;
+            left: 40px;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 4px;
+        }
+        .main .timeline .timeline-item {
+            clear: both;
+            list-style-type: none;
+            padding: 0 30px;
+            position: relative;
+        }
+        .main .timeline .timeline-item:before {
+            background: #b01116;
+            border-radius: 50%;
+            content: '';
+            height: 20px;
+            left: 0%;
+            position: absolute;
+            transform: translateX(-50%);
+            width: 20px;
+        }
+        .main .timeline .timeline-item .timeline-content {
+            background: #fff;
+            border: 2px solid black;
+            padding: 1em;
+            width: 70%;
+        }
+        .main .timeline .timeline-item .timeline-content h3, .main .timeline .timeline-item .timeline-content p, .main .timeline .timeline-item .timeline-content button {
+            margin: 20px;
+        }
+        .main .timeline .timeline-item:nth-child(even) .timeline-content {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .main .timeline .timeline-item:nth-child(2):before {
+            background: #b01116;
+        }
+        .main .timeline .timeline-item:nth-child(2) .timeline-content {
+            background: #fff;
+            border: 2px solid black;
+        }
+        .main .timeline .timeline-item:nth-child(3):before {
+            background: #b01116;
+        }
+        .main .timeline .timeline-item:nth-child(3) .timeline-content {
+            background: #fff;
+            border: 2px solid black;
+        }
+        .main .timeline .timeline-item:nth-child(4):before {
+            background: #b01116;
+        }
+        .main .timeline button {
+            background: #fff;
+            border: 2px solid #fff;
+            color: #656565;
+            font-weight: 500;
+            padding: 10px;
+            transition: all 0.3s;
+        }
+        .main .timeline button:hover {
+            background: #fff;
+            border: 2px solid #656565;
+        }
+        @media screen and (max-width: 968px) {
+            .main .timeline {
+                margin: 0 0 0 10px;
+            }
+            .main .timeline:before {
+                left: 40px;
+            }
+            .main .timeline .timeline-item:before {
+                left: 0;
+            }
+            .main .timeline .timeline-item .timeline-content:nth-child(1) {
+                margin: 2em 0;
+                width: 100%;
+            }
+            .main .timeline .timeline-item .timeline-content:nth-child(2) {
+                margin: 2em 0;
+                width: 100%;
+            }
+            .main .timeline .timeline-item .timeline-content:nth-child(1) {
+                margin: 2em 0 0 0;
+                width: 100%;
+            }
+            .main .timeline .timeline-item .timeline-content:nth-child(4) {
+                margin: 2em 0;
+                width: 100%;
+            }
+
+            .main .timeline .timeline-item:nth-child(even) .timeline-content {
+                float: initial;
+            }
+        }
+        
+  </style>
+  <body>
+    <p id="committee-link"></p>
+    <nav>
+      <section id="navbar" class="section">
+        <div class="navbar">
+          <div class="navbar-container flex-container logo-container">
+            <div class="logo">
+              <img src="https://i.imgur.com/p35NgAU.png" alt="">
+            </div>
+          </div>
+          <div class="navbar-container flex-container link-container">
+            <div class="nav-link"><a href="index.html#home">Home</a></div>
+            <div class="nav-link"><a href="index.html#schedule">Schedule</a></div>
+            <div class="nav-link"><a href="index.html#about">About MUN</a></div>
+            <div class="nav-link active dropdown">
+              <a href="#committees">Commmittee <span class="fa fa-angle-down"></span></a>
+              <div class="dropdown-container">
+                <a href="unep.html">UNEP</a>
+                <a href="unsc.html">UNSC</a>
+                <a href="adhoc.html">Ad Hoc</a>
+                <a href="afet.html">AFET</a>
+                <a href="warcabinet.html">War Cabinet</a>
+              </div>
+            </div>
+            <div class="nav-link"><a href="#fourth-estate">Fourth Estate</a></div>
+            <div class="nav-link"><a href="#blank">Blank</a></div>
+          </div>
+          <div class="responsive-navbar">
+            <i class="fa fa-bars"></i>
+          </div>
+        </div>
+      </section>
+    </nav>
+    <div class="rnavbar-container">
+      <div class="rlink-container">
+        <div class="rnav-link"><a href="#home">Home</a></div>
+        <div class="rnav-link"><a href="#schedule">Heading 1</a></div>
+        <div class="rnav-link"><a href="#addressals">Heading 2</a></div>
+        <div class="rnav-link"><a href="#committees">Heading 3</a></div>
+        <div class="rnav-link"><a href="#fourth-estate">Heading 4</a></div>
+        <div class="rnav-link"><a href="#secretariat">Heading 5</a></div>
+      </div>
+    </div>
+
+    <header>
+      <section class="section" style="background-color: black;">
+        <div class="heading-container" style="padding:300px;justify-content: center;">
+            <span class="common-heading" style="color: white;font-size: 200%;">Ad Hoc</span>
+          </div>
+      </section>
+    </header>
+
+    <section class="section">
+      <div class="estate" style="padding-bottom: 0px;">
+        <div class="estate-content" style="width: 100%;">
+          <span class="common-heading">About</span>
+          <div class="estate-text-container" style="margin-top: 5%;">
+            <p>The United Nations Environment Programme (UNEP) is the leading global environmental authority that sets the global environmental agenda, promotes the coherent implementation of the environmental dimension of sustainable development within the United Nations system, and serves as an authoritative advocate for the global environment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+        <div class="estate" style="padding-top: 100px;">
+            <div class="estate-content" style="width: 100%;">
+            <span class="common-heading">Agenda</span>
+            <div class="estate-text-container" style="margin-top: 5%;">
+                <p>Illegal wildlife trade is one of the largest forms of transnational organized crime today. In India, trade in over 1,800 species of wild animals, plants and their derivatives, is prohibited under the Wildlife (Protection) Act, 1972.</p>
+                <div class="common-button">
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" style="background-color: #faf1e6;">
+        <div class="estate" style="padding-top: 100px;padding-bottom: 0px;">
+            <div class="estate-content" style="width: 100%;">
+            <span class="common-heading">Executive Board</span>
+            </div>
+        </div>
+        <h3>&nbsp;</h3>
+        <div class="container main">
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <div class="timeline-content" style="padding-bottom: 50px;">
+                        <div style="float: left;margin-right: 15px;margin-bottom: 60px;">
+                            <img src="https://source.unsplash.com/6GgCyNnF6Zs/500x500" alt="" style="border-radius: 50%;width: 130px;height: 130px;">
+                            <h3 style="position: relative;margin-bottom: 0px;margin-top: 2px;">John Doe</h3>
+                            <p class="text-muted" style="font-style: italic;line-height:0px;margin-top: 5px;">Chaiperson</p>
+                        </div>
+                        <div style="margin-bottom: 60px;">
+                            <p>Sugar plum topping tootsie roll cheesecake gummi bears pie halvah. Gummies topping brownie marshmallow macaroon cotton candy. Marshmallow candy canes lemon drops wafer danish pastry cake dessert cupcake. Chocolate dessert chocolate cake bear claw icing toppinng.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content" style="padding-bottom: 50px;">
+                        <div style="float: left;margin-right: 15px;margin-bottom: 60px;">
+                            <img src="https://source.unsplash.com/6GgCyNnF6Zs/500x500" alt="" style="border-radius: 50%;width: 130px;height: 130px;">
+                            <h3 style="position: relative;margin-bottom: 0px;margin-top: 2px;">John Doe</h3>
+                            <p class="text-muted" style="font-style: italic;line-height:0px;margin-top: 5px;">Chaiperson</p>
+                        </div>
+                        <div style="margin-bottom: 60px;">
+                            <p>Sugar plum topping tootsie roll cheesecake gummi bears pie halvah. Gummies topping brownie marshmallow macaroon cotton candy. Marshmallow candy canes lemon drops wafer danish pastry cake dessert cupcake. Chocolate dessert chocolate cake bear claw icing toppinng.</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="timeline-item">
+                    <div class="timeline-content" style="padding-bottom: 50px;">
+                        <div style="float: left;margin-right: 15px;margin-bottom: 60px;">
+                            <img src="https://source.unsplash.com/6GgCyNnF6Zs/500x500" alt="" style="border-radius: 50%;width: 130px;height: 130px;">
+                            <h3 style="position: relative;margin-bottom: 0px;margin-top: 2px;">John Doe</h3>
+                            <p class="text-muted" style="font-style: italic;line-height:0px;margin-top: 5px;">Chaiperson</p>
+                        </div>
+                        <div style="margin-bottom: 60px;">
+                            <p>Sugar plum topping tootsie roll cheesecake gummi bears pie halvah. Gummies topping brownie marshmallow macaroon cotton candy. Marshmallow candy canes lemon drops wafer danish pastry cake dessert cupcake. Chocolate dessert chocolate cake bear claw icing toppinng.</p>
+                        </div>
+                    </div>
+                </li>
+                
+                <li class="timeline-item">
+                </li>
+            </ul>
+        </div>
+        <body style="background-color: #FFEAC9;">
+          <link rel="stylesheet" href="./css/style1.css">
+            
+<!-- partial -->
+  <script  src="./js/script1.js"></script>
+    </section>
+
+    <section class="section">
+      <div class="estate">
+        <div class="estate-image">
+          <div class="image-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Doorstep_-_Informal_Defence_Ministers_Meeting_%28Informal_FAC-defence%29_2016-09-27_%2829959358075%29.jpg">
+          </div>
+        </div>
+        <div class="estate-content">
+          <span class="common-heading">Fourth Estate</span>
+          <div class="estate-text-container">
+<p><q>“The less you know, the more you believe.” ― Bono</q></p>
+<p>&nbsp;</p>
+<p>Media and journalism have both the capacity and capability to teach, manipulate, sensitise and mobilise the citizenry through information dissemination. A member of the Fourth Estate is characterised by their spirit of inquiry, a dedication to transparency and passion for the written word.</p>
+<p>&nbsp;</p>
+<p>With the decline of media integrity in the modern world, it falls upon the journalists, cartoonists and photographers to uphold the traditional ideals of ethical journalism.</p>
+<p>&nbsp;</p>
+<p>The story is out there, find it and make it your own.</p>
+<p>&nbsp;</p>
+<p>Meyha Bishnoi</p>
+<p>Editor In-Chief</p>
+            <div class="common-button">
+              <button><a href="https://stepbystep.school/" target="_blank">Pre-Con</a></button>
+              <button><a href="https://stepbystep.school/" target="_blank">Day 1</a></button>
+              <button><a href="https://stepbystep.school/" target="_blank">Day 2</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blank" class="section">
+
+    </section>
+
+<link rel="stylesheet" href="css/css2/style3.css">
+<link rel="stylesheet" href="css/css2/responsive.css">
+
+</section>
+
+    <footer>
+        <h3>© Copyright Intra SBSMUN 2021</h3>
+    </footer>  
+      </body>
+  <script src="/js/script9.js"></script>
+  <script src="ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/committeescroll1.js"></script>
+  <script src="js/readmore.js"></script>
+  <script src="js/responsive.js"></script>
+  <script src="js/scrollcolour.js"></script>
+  <script src="js/scrollunderline.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/validate.js"></script>
+  <script src="js/js2/jquery.js"></script>
+  <script src="js/js2/bootstrap.min.js"></script>
+  <script src="js/js2/bootstrap-select.min.js"></script>
+  <script src="js/js2/jquery.validate.min.js"></script>
+  <script src="js/js2/owl.carousel.min.js"></script>
+  <script src="js/js2/isotope.js"></script>
+  <script src="js/js2/jquery.magnific-popup.min.js"></script>
+  <script src="js/js2/js2/waypoints.min.js"></script>
+  <script src="js/js2/jquery.counterup.min.js"></script>
+  <script src="js/js2/wow.min.js"></script>
+  <script src="js/js2/jquery.easing.min.js"></script>
+  <script src="js/js2/custom.js"></script>
+
+
+</html>
